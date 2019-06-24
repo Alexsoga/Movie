@@ -1,0 +1,43 @@
+.header{
+    background-image: url('http://luksgraphics.co.ke/wp-content/uploads/2017/01/blue-wallpaper-6.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.rectangle{
+    height:50vh;
+    width: 25vw;
+    background-color: rgba(22, 9, 60,.30);
+    margin-top:8rem;
+}
+
+.btn-google {
+    color: white;
+    background-color: #ea4335;
+  }
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+    .rectangle{
+        height: 56vh;
+        width: 65vw;
+        background-color:  rgba(22, 9, 60,.30);
+        margin-top:6rem;
+    }
+    .btn{
+        margin-left:3rem;
+
+    }
+    
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .rectangle{
+        height: 35vh;
+        width: 41vw;
+        background-color:  rgba(22, 9, 60,.30);
+        margin-top:12rem;
+    }
+    .btn{
+        margin-left:5rem;
+
+    }
+}

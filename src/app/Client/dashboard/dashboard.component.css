@@ -1,0 +1,19 @@
+@media (min-width: 992px){
+    .mar{
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+    .size{
+        height:50vh !important;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 320px){
+    .mar{
+        padding-left: 2.3rem;
+        padding-right: 2.3rem;
+    }
+    .size{
+        height:20vh !important;
+    }
+}

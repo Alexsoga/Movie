@@ -1,0 +1,46 @@
+<app-adheader></app-adheader>
+<br>
+<div class="row mt-4 ">
+  <div class="d-none d-md-block d-lg-block d-xl-block col-md-3  sidenav">
+    <app-siderbar></app-siderbar>
+  </div>
+  <div class="col-md-9 col-sm-12 my-2 bg-light">
+      <div class="row mt-5">
+        <div class="col-12">
+            <div class="col-md-12 p-1 my-2 bg-white">
+                <h3 class="text-dark text-center">Adding Details</h3>
+<br>
+
+<form class="example-form mx-auto">
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="Title"#title>
+      </mat-form-field>
+    <br>
+    <br>
+      <mat-form-field class="example-full-width">
+        <textarea matInput placeholder="Description" #description></textarea>
+      </mat-form-field>
+      <br>
+      <br>
+      <mat-form-field class="example-full-width">
+          <textarea matInput placeholder="Link" #link></textarea>
+        </mat-form-field>
+        <br>
+      <br>
+       
+            <input   type="file" single=true (change)="upload($event,title.value)"  name="file-input" accept=".png,.jpg">
+        
+            <br>
+            <br>
+        <button type="submit"   class=" btn btn-primary" (click)="add(title.value, description.value, link.value)">Add</button>
+</form>
+                </div>
+
+
+
+            </div>
+
+
+         </div>
+         
+         </div>

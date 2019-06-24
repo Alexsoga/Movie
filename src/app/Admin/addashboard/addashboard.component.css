@@ -1,0 +1,77 @@
+.navdes
+{
+    background-color: #F07C49 !important;
+    color:#fff;
+}
+a.nav-link {
+    color: #fff;
+}
+.invisible {
+    visibility: hidden;
+  }
+  .sminput
+  {
+    width: 2px !important;
+  }
+  .sidenav{
+  background-color: #656565 !important;
+  
+  
+  }
+  .nav-link.active {
+    background-color:#f07c49;
+  
+  }
+  a.nav-link {
+    padding: 0;
+
+  
+ }
+ .col-md-9{
+    margin-bottom: 0rem !important; 
+ }
+
+ .example-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-width: 300px;
+  }
+  
+  .example-header {
+    min-height: 64px;
+    padding: 8px 24px 0;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  .mat-table {
+    overflow: auto;
+    padding:6px; 
+  }
+  
+  .mat-accent {
+    margin-bottom: 10px;
+  }
+  
+  @keyframes fadeIt {
+    0% {
+      background-color: #FFFFFF;
+    }
+    50% {
+      background-color: #98FB98;
+    }
+    100% {
+      background-color: #FFFFFF;
+    }
+  }
+  .animate {
+    background-image: none !important;
+  }

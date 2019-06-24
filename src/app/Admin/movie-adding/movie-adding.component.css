@@ -1,0 +1,42 @@
+.navdes
+{
+    background-color: #F07C49 !important;
+    color:#fff;
+}
+a.nav-link {
+    color: #fff;
+}
+.invisible {
+    visibility: hidden;
+  }
+  .sminput
+  {
+    width: 2px !important;
+  }
+  .sidenav{
+  background-color: #656565 !important;
+  
+  
+  }
+  .nav-link.active {
+    background-color:#f07c49;
+  
+  }
+  a.nav-link {
+    padding: 0;
+
+  
+ }
+ .col-md-9{
+    margin-bottom: 0rem !important; 
+ }
+
+ .example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
