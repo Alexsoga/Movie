@@ -20,7 +20,7 @@ export interface Order {
   styleUrls: ['./addashboard.component.css']
 })
 export class AddashboardComponent implements OnInit {
-  displayedColumns = ['title','descripe','link','create','updated','edit/delete'];
+  displayedColumns = ['title','create','updated','edit/delete'];
   dataSource: MatTableDataSource<Order>; 
   
   movie;
@@ -53,12 +53,11 @@ export class AddashboardComponent implements OnInit {
     this.dataSource.filter = filterValue;
     
   }
-  scheduleorder(a, b, c){
+  scheduleorder(a, c){
     const d = new Date();
     const db = this.afs.doc(`movie/${a}`)
     const details = {
      title: a,
-     description : b,
      link : c,
      update: d
   }

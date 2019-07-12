@@ -5,7 +5,7 @@ import * as firebase from 'firebase';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { AngularFirestore, AngularFirestoreDocument } from '@angular/fire/firestore';
 
-import { Observable , of } from 'rxjs';
+import { Observable,of,BehaviorSubject } from 'rxjs';
 import {switchMap} from 'rxjs/operators'
 
 interface User {
@@ -45,6 +45,8 @@ export class AuthService {
         })
       )
   }
+  private links:string;
+  public bslinks: BehaviorSubject<any> = new BehaviorSubject<any>(this.links);
 
   get currentUserId(): string {
     return (this.authState !== null) ? this.authState.uid : 'no'
@@ -85,5 +87,14 @@ export class AuthService {
     this.afAuth.auth.signOut().then(() => {
         this.router.navigate(['/']);
     });
+  }
+
+updatelink(link){
+  this.setlinks(link)
+}
+  setlinks(link): void {
+    this.links =link;
+    this.bslinks.next(this.links);
+    console.log(this.links);
   }
 }

@@ -4,7 +4,10 @@
         margin-right: 2.5rem;
     }
     .size{
-        height:50vh !important;
+        height:20vh !important;
+    }
+    .size1{
+        width:10vw!important;
     }
 }
 
@@ -16,4 +19,8 @@
     .size{
         height:20vh !important;
     }
+    .size1{
+        width:40vw!important;
+    }
 }
+

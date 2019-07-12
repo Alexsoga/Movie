@@ -21,12 +21,11 @@ export class MovieAddingComponent implements OnInit {
   ngOnInit() {
     
   }
-  add(a, b, c){
+  add(a, c){
     const d = new Date();
     const db = this.afs.doc(`movie/${a}`)
     const details = {
      title: a,
-     description : b,
      link : c,
      create: d,
      update: d,

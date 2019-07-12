@@ -1,13 +1,11 @@
 <app-header></app-header>
 <div class="container">
     <div class="row">
-    <div class="col-lg-3 col-md-3 col-6 my-4" *ngFor="let movie of movie | async;let i=index;">
-     <div class="card" >
+    <div class="col-lg-2 col-md-2 col-6 my-4" *ngFor="let movie of movie | async;let i=index;">
+     <div class="card size1" [routerLink]="['/view']" routerLinkActive="active" (click)="load(movie.link)">
        <img class="card-img-top size" [src]="movie.url" alt="Card image" >
        <div class="card-body">
-         <h4 class="card-title">{{movie.title}}</h4>
-         <p class="card-text">{{movie.description}}</p>
-         <a href="#" class="btn btn-primary px-5 mar" [routerLink]="['/view']" routerLinkActive="active">View</a>
+         <h4 class="card-title text-center">{{movie.title}}</h4>
        </div><!-- card body end-->
      </div><!--card end-->
      </div><!--col end-->

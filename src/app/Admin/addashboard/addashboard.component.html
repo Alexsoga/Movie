@@ -27,18 +27,7 @@
               </ng-container>
           
              
-              <ng-container matColumnDef="descripe">
-                <th mat-header-cell *matHeaderCellDef mat-sort-header> Description</th>
-                <td mat-cell *matCellDef="let orders">{{orders.description}}</td>
-               
-              </ng-container>
-          
               
-              <ng-container matColumnDef="link">
-                <th mat-header-cell *matHeaderCellDef mat-sort-header> Link </th>
-                <td mat-cell *matCellDef="let orders" >{{orders.link}}</td>
-                
-              </ng-container>
           
              
               <ng-container matColumnDef="create">
@@ -104,10 +93,9 @@
                                     
                                  <label>Title</label>&nbsp;&nbsp;&nbsp;<input type="text" #title   [value]='movie.title' class="col-6 form-control" >
                                  <br>
-                                 <label>Description</label>&nbsp;&nbsp;&nbsp;<input type="text" #description  [value]='movie.description' class="col-6 form-control" >
-                                <br>
+                                 
                                  <label>Link</label>&nbsp;&nbsp;&nbsp;<input type="text" #link  [value]='movie.link' class="col-6 form-control" >  <br><br>
-                                  <button type="submit"   class="mx-4 btn btn-primary" (click)="scheduleorder(title.value, description.value, link.value)">update</button>
+                                  <button type="submit"   class="mx-4 btn btn-primary" (click)="scheduleorder(title.value, link.value)">update</button>
                                 </form>
                                      </div>
                                   

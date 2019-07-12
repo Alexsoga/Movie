@@ -18,11 +18,6 @@
     <br>
     <br>
       <mat-form-field class="example-full-width">
-        <textarea matInput placeholder="Description" #description></textarea>
-      </mat-form-field>
-      <br>
-      <br>
-      <mat-form-field class="example-full-width">
           <textarea matInput placeholder="Link" #link></textarea>
         </mat-form-field>
         <br>
@@ -32,7 +27,7 @@
         
             <br>
             <br>
-        <button type="submit"   class=" btn btn-primary" (click)="add(title.value, description.value, link.value)">Add</button>
+        <button type="submit"   class=" btn btn-primary" (click)="add(title.value,  link.value)">Add</button>
 </form>
                 </div>
 
